@@ -1,0 +1,59 @@
+.searchContainer{
+    border: 0.5px solid;
+    border-radius: 20px;
+    margin: 5px 53px;
+    padding: 11px;
+    width: 60vw;
+}
+
+.searchInput{
+    visibility: visible;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: gray;
+    height: 100%;
+    outline: 0PX;
+    padding-inline: 52PX;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+
+.findButton{
+    background-color: #e5e7ef;
+    border: 1px solid #e5e7ef;
+    border-radius: 4px;
+    color: #0d0d0e;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img{
+    max-width: 300px;
+}
+
+.small{
+    font-size: small;
+}
+
+a{
+    text-decoration: none;
+    margin-left: 5px;
+}

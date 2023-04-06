@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './style.css';
+import { Button } from './Button';
+import { Search } from './Search';
+import { Logo } from './Logo';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="mainContent">
+        <Logo />
+        <Search />
+        <div style={{ display: 'flex' }}>
+          <Button value="Google search" />
+          <Button value="I'm feeling lucky" />
+        </div>
+        <p className="small">
+          Google offered in:
+          <a href="#">Hausa</a>
+          <a href="#">Igbo</a>
+          <a href="#">Ede Yoruba</a>
+          <a href="#">Nigerian Pidgin</a>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  </div>
   );
 }
-
-export default App;
